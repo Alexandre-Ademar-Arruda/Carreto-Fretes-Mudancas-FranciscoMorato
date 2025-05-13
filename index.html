@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carreto em Francisco Morato</title>
+  <meta name="description" content="Peça seu orçamento de frete, carreto ou mudança em Francisco Morato, Franco da Rocha, Caieiras e região.">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+  <meta name="theme-color" content="#388e3c">
+</head>
+<body>
+
+  <header>
+    <h1>Carretos Fretes Mudanças</h1>
+    <h2>FRANCISCO MORATO</h2>
+  </header>
+
+  <main>
+    <button id="btnOrcamento">📝 Solicitar Orçamento</button>
+
+    <section id="comodosContainer" class="hidden">
+      <div class="comodoToggle" data-comodo="cozinha">🍽️ Cozinha</div>
+      <form id="cozinha" class="comodo hidden">
+        <label><input type="checkbox" id="geladeira"  name="Cozinha" value="✅🧊 Geladeira" />              ✅🧊 Geladeira</label>
+        <label><input type="checkbox" id="fogao"      name="Cozinha" value="✅🍳 Fogão" />                  ✅🍳 Fogão</label>
+        <label><input type="checkbox" id="maquina"    name="Cozinha" value="✅🧼 Máquina de Lavar Roupa" /> ✅🧼 Máquina de Lavar Roupa</label>
+        <label><input type="checkbox" id="microondas" name="Cozinha" value="✅🍔 Micro-ondas" />            ✅🍔 Micro-ondas</label>
+        <label><input type="checkbox" id="lavaLoucas" name="Cozinha" value="✅🍽️ Lava-louças" />            ✅🍽️ Lava-louças</label>
+        <label><input type="checkbox" id="forno"      name="Cozinha" value="✅🔥 Forno" />                  ✅🔥 Forno</label>
+      </form>
+
+      <div class="comodoToggle" data-comodo="quarto">🛏️ Quarto</div>
+      <form id="quarto" class="comodo hidden">
+        <label><input type="checkbox" id="colchao"      name="Quarto" value="✅🛏️ Colchão" />       ✅🛏️ Colchão</label>
+        <label><input type="checkbox" id="box"          name="Quarto" value="✅🛏️ Box" />           ✅🛏️ Box</label>
+        <label><input type="checkbox" id="guardaRoupa"  name="Quarto" value="✅👚 Guarda-roupa" />  ✅👚 Guarda-roupa</label>
+      </form>
+
+      <div class="comodoToggle" data-comodo="sala">🛋️ Sala</div>
+      <form id="sala" class="comodo hidden">
+        <label><input type="checkbox" id="sofa"     name="Sala" value="✅🛋️ Sofá" />    ✅🛋️ Sofá</label>
+        <label><input type="checkbox" id="rack"     name="Sala" value="✅📺 Rack" />    ✅📺 Rack</label>
+        <label><input type="checkbox" id="estante"  name="Sala" value="✅🖼️ Estante" /> ✅🖼️ Estante</label>
+      </form>
+    </section>
+
+    <section id="dadosFinais" class="hidden">
+      <label for="nome">🙋 Nome:
+        <input type="text" id="nome" placeholder="Seu nome completo" />
+      </label> 
+      <label for="carregar">📍 Endereço de carregar:
+        <input type="text" id="carregar" placeholder="Rua e número de origem" />
+      </label>
+      <label for="descarregar">📍 Endereço de descarregar:
+        <input type="text" id="descarregar" placeholder="Rua e número de destino" />
+      </label>
+      <label for="data">📅 Data do carreto:
+        <input type="date" id="data" />
+      </label>
+
+      <button id="btnEnviarZap">📤 Enviar Orçamento no Zap</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
